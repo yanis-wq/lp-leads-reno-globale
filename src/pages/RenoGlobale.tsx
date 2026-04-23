@@ -31,7 +31,7 @@ const config: LeadPageConfig = {
     {
       icon: Zap,
       title: "Temps réel",
-      desc: "Transmis instantanément par email, Google Sheet ou webhook.",
+      desc: "Transmis instantanément par mail, SMS et Google Sheet.",
       iconBg: "bg-orange-100",
       iconColor: "text-orange-500",
     },
