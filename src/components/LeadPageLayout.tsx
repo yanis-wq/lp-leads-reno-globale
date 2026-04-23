@@ -130,7 +130,7 @@ const LeadPageLayout = ({ config }: { config: LeadPageConfig }) => {
         </motion.div>
 
         <motion.a
-          href="#pricing"
+          href="https://tally.so/r/wM92WM?lp=reno-globale"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}

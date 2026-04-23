@@ -22,7 +22,7 @@ const StickyBanner = () => {
             Ce tarif double chaque mois. Verrouillez-le maintenant.
           </p>
           <a
-            href="#pricing"
+            href="https://tally.so/r/wM92WM?lp=reno-globale"
             className="inline-block mt-3 bg-red-gradient text-primary-foreground text-xs font-bold px-4 py-2 rounded-full hover:scale-105 transition-transform"
           >
             Démarrer mon partenariat
