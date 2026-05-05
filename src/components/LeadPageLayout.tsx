@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Check, Gift, LucideIcon } from "lucide-react";
 import KrnoLogo from "./KrnoLogo";
@@ -40,6 +41,7 @@ export interface LeadPageConfig {
   title: string;
   subtitle: string;
   ctaUrl: string;
+  lpParam: string;
   features: LeadFeature[];
   productLabel: string;
   productDesc: string;
@@ -74,8 +76,22 @@ const press = [
 // ─── Template ────────────────────────────────────────────────────────────────
 
 const LeadPageLayout = ({ config }: { config: LeadPageConfig }) => {
-  const { title, subtitle, ctaUrl, features,
+  const { title, subtitle, ctaUrl, lpParam, features,
     productLabel, productDesc, pricingBannerText, plans } = config;
+
+  const [sid, setSid] = useState("");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setSid(params.get("sid") || "");
+  }, []);
+
+  const buildUrl = (base: string) => {
+    const url = new URL(base);
+    url.searchParams.set("lp", lpParam);
+    if (sid) url.searchParams.set("sid", sid);
+    return url.toString();
+  };
 
   return (
     <div className="min-h-screen">
@@ -118,7 +134,7 @@ const LeadPageLayout = ({ config }: { config: LeadPageConfig }) => {
         </motion.div>
 
         <motion.a
-          href={ctaUrl}
+          href={buildUrl(ctaUrl)}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
@@ -259,7 +275,7 @@ const LeadPageLayout = ({ config }: { config: LeadPageConfig }) => {
                   </ul>
 
                   <a
-                    href={plan.ctaUrl}
+                    href={buildUrl(plan.ctaUrl)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`w-full text-center font-bold py-3.5 rounded-xl transition-transform hover:scale-[1.02] ${

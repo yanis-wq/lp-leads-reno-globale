@@ -6,6 +6,7 @@ const config: LeadPageConfig = {
   subtitle:
     "KRNO identifie les passoires thermiques éligibles à une rénovation d'ampleur grâce à l'IA, et vous envoie en exclusivité des leads à fort potentiel de chantier.",
   ctaUrl: "https://tally.so/r/Gxo6Jk",
+  lpParam: "reno-globale",
   features: [
     {
       icon: Shield,
