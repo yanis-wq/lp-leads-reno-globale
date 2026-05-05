@@ -2,10 +2,10 @@ import LeadPageLayout, { LeadPageConfig } from "@/components/LeadPageLayout";
 import { Shield, Target, Phone, Zap } from "lucide-react";
 
 const config: LeadPageConfig = {
-  badge: "Leads Réno Globale exclusifs",
   title: "Des leads Réno Globale 100% qualifiés",
   subtitle:
-    "KRNO identifie les propriétaires avec des passoires thermiques éligibles à une rénovation d'ampleur grâce à l'IA, et vous envoie en exclusivité des leads à fort potentiel.",
+    "KRNO identifie les passoires thermiques éligibles à une rénovation d'ampleur grâce à l'IA, et vous envoie en exclusivité des leads à fort potentiel de chantier.",
+  ctaUrl: "https://tally.so/r/Gxo6Jk",
   features: [
     {
       icon: Shield,
@@ -36,18 +36,10 @@ const config: LeadPageConfig = {
       iconColor: "text-orange-500",
     },
   ],
-  statsTitle: "Tous types de rénovations globales couverts",
-  statsSubtitle:
-    "De la rénovation par gestes à la rénovation d'ampleur complète, nos leads couvrent l'ensemble de vos projets.",
-  stats: [
-    { title: "Rénovation d'ampleur", desc: "Passoires thermiques F/G souhaitant atteindre la classe C ou D." },
-    { title: "MaPrimeRénov' Parcours accompagné", desc: "Projets multi-gestes avec Mon Accompagnateur Rénov'." },
-    { title: "Réno copropriété", desc: "DTG et projets de rénovation globale pour syndics et copropriétés." },
-  ],
   productLabel: "Leads Réno Globale — Rénovation d'Ampleur",
   productDesc:
-    "Propriétaires souhaitant réaliser une rénovation globale de leur logement. Passoire thermique identifiée, projet qualifié, contact vérifié.",
-  pricingBannerText: "LEADS RÉNO GLOBALE · OFFRE LIMITÉE AVRIL",
+    "Propriétaires de logements classés F ou G souhaitant réaliser une rénovation d'ampleur — MaPrimeRénov' parcours accompagné. Passoire identifiée, éligibilité vérifiée, contact qualifié.",
+  pricingBannerText: "LEADS RÉNO GLOBALE · OFFRE MAI 2026",
   plans: [
     {
       name: "DÉCOUVERTE",
@@ -67,6 +59,7 @@ const config: LeadPageConfig = {
         "Sans engagement",
       ],
       cta: "Choisir Découverte →",
+      ctaUrl: "https://tally.so/r/Gxo6Jk",
       highlighted: false,
       accentColor: false,
     },
@@ -89,6 +82,7 @@ const config: LeadPageConfig = {
         "Partenariat backlink SEO",
       ],
       cta: "Choisir Croissance →",
+      ctaUrl: "https://tally.so/r/Gxo6Jk",
       highlighted: true,
       accentColor: true,
     },
@@ -109,6 +103,7 @@ const config: LeadPageConfig = {
         "Intégration CRM sur mesure",
       ],
       cta: "Choisir Accélérateur →",
+      ctaUrl: "https://tally.so/r/Gxo6Jk",
       highlighted: false,
       accentColor: false,
     },
