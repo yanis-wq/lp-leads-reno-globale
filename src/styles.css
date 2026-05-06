@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(235 45% 15%);
+  --color-foreground: hsl(0 0% 100%);
+  --color-card: hsl(235 40% 20%);
+  --color-card-foreground: hsl(0 0% 100%);
+  --color-popover: hsl(235 40% 20%);
+  --color-popover-foreground: hsl(0 0% 100%);
+  --color-primary: hsl(0 78% 55%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(235 35% 25%);
+  --color-secondary-foreground: hsl(0 0% 100%);
+  --color-muted: hsl(235 30% 30%);
+  --color-muted-foreground: hsl(230 20% 70%);
+  --color-accent: hsl(235 35% 25%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(235 30% 30%);
+  --color-input: hsl(235 30% 30%);
+  --color-ring: hsl(0 78% 55%);
+  --radius: 0.75rem;
+  --font-sans: 'Inter', sans-serif;
+}
+
+:root {
+  --gradient-hero: linear-gradient(180deg, hsl(235 45% 18%) 0%, hsl(235 45% 12%) 100%);
+  --gradient-card: linear-gradient(135deg, hsl(235 40% 22%) 0%, hsl(235 40% 18%) 100%);
+  --gradient-red: linear-gradient(135deg, hsl(0 78% 55%) 0%, hsl(0 78% 45%) 100%);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, hsl(0 78% 55%), hsl(0 78% 65%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-krno-gradient { background: var(--gradient-hero); }
+.bg-card-gradient { background: var(--gradient-card); }
+.bg-red-gradient { background: var(--gradient-red); }
+.glow-red { box-shadow: 0 0 30px hsl(0 78% 55% / 0.3); }
